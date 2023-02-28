@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="9490003-world-global-planet-earth-icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Babylonica&display=swap" 
+        rel="stylesheet"
+    />
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Mynerve&display=swap" 
+        rel="stylesheet">
+    <title>Ha Do</title>
+    <style>
+
+
+
+  /* 1121-2000 */
+    body{
+      background-image: url(LIVE\ YOUR\ LIFE\ THE\ WAY\ YOU\ WANT\ \(1\).png)!important; height: 100%; background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .leftpart{
+      margin-left: 5vh;
+    }
+    .Title{
+      font-family: 'Permanent Marker', cursive;
+      color: #ffffff;
+      font-size: 60px;
+      margin-bottom: 0;
+      padding: 0;
+      margin-top: 0vh;   
+    }
+    .subtitle{
+      padding-left: 15%;
+      padding-right: 35%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .subtitletext{
+      font-family: 'Montserrat', sans-serif; 
+      color: #5e17eb;
+      font-size: 24px;
+      margin: 0;
+      margin-top: 0vh;
+      padding: 0;
+      text-align: center;
+      margin-left: -25%;
+      text-shadow: 1px 0 #5e17eb;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+    .anh{
+      display: none;
+      height: 1px;
+      width: 1px;
+    }
+    .agree{
+      color: #ffffff; 
+      font-size: 14px;
+    }
+    .HaDo{
+      font-family: 'Babylonica', cursive;
+      font-size: 50px; 
+      color: #004aad;
+      display: flex; 
+      justify-content: flex-end; 
+      margin-right: 13%;
+      margin-top: 5%;
+    }
+    .copyright{
+      font-family: 'Montserrat', sans-serif; ;
+      font-size: 15px; color: #004aad;
+      display: flex; 
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: -3%;
+      margin-right: 10%;
+      text-align: center;
+    }
+    #loader {
+      border: 12px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 12px solid #444444;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+    }
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    .center {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    #bg{
+      background-image: url(loading\ screen\ pc.png);
+      width: 100%;
+      height: 100%;
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+    } 
+    .input {
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 25px; 
+      height: 20%;
+      border: none;
+      padding: 0vh 3% 0vh 3%;
+      width: 40%; 
+    }
+    .submit{
+      margin-top: 2%;
+    }
+    input[type=submit] {
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 25px; 
+      height: 20%;
+      border: none;
+      padding: 0vh 12% 0vh 12%;
+       width: fit-content;
+      cursor:pointer;
+      background-color: #f68712;
+    }
+    .agree{
+      color: #ffffff; 
+      font-size: 14px;
+      padding-left: 3%;
+      padding-right: 3%;
+      font-family: 'Mynerve', cursive;
+    }
+    .nhap{
+      width: 40%; 
+      margin-top: 9%
+    }
+
+
+
+  /* 1400 - 1121 */
+  @media screen and (max-width: 1400px) and (min-width: 1121px) {
+    .Title{
+    font-family: 'Permanent Marker', cursive;
+    color: #ffffff;
+    font-size: 60px;
+    margin-bottom: 0;
+    padding: 0;
+    margin-top: -1vh;   
+    }
+    .subtitletext{
+      font-family: 'Montserrat', sans-serif; 
+      color: #5e17eb;
+      font-size: 20px;
+      margin: 0;
+      margin-top: 0vh;
+      padding: 0;
+      text-align: center;
+      margin-left: -25%;
+      text-shadow: 1px 0 #5e17eb;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+    .HaDo{
+      font-family: 'Babylonica', cursive;
+      font-size: 50px; 
+      color: #004aad;
+      display: flex; 
+      justify-content: flex-end; 
+      margin-right: 13%;
+      margin-top: 4%;
+    }
+    .copyright{
+      font-family: 'Montserrat', sans-serif; ;
+      font-size: 15px; color: #004aad;
+      display: flex; 
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: -4%;
+      margin-right: 10%;
+      text-align: center;
+    }
+  }
+
+
+
+  /* 1120 - 1029 */
+  @media screen and (max-width: 1120px) and (min-width: 1029px) {
+    .Title{
+      font-family: 'Permanent Marker', cursive;
+      color: #ffffff;
+      font-size: 55px;
+      margin-bottom: 0;
+      padding: 0;
+      margin-top: -1vh;   
+    }
+    .subtitletext{
+      font-family: 'Montserrat', sans-serif; 
+      color: #5e17eb;
+      font-size: 20px;
+      margin: 0;
+      margin-top: 0vh;
+      padding: 0;
+      text-align: center;
+      margin-left: -25%;
+      text-shadow: 1px 0 #5e17eb;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+    .HaDo{
+      font-family: 'Babylonica', cursive;
+      font-size: 50px; 
+      color: #004aad;
+      display: flex; 
+      justify-content: flex-end; 
+      margin-right: 13%;
+      margin-top: 4%;
+    }
+    .copyright{
+      font-family: 'Montserrat', sans-serif; ;
+      font-size: 15px; color: #004aad;
+      display: flex; 
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: -4%;
+      margin-right: 10%;
+      text-align: center;
+    }
+  }
+
+
+
+  /* 1029 - 937 */
+  @media screen and (max-width: 1029px) and (min-width: 937px) {
+    .Title{
+      font-family: 'Permanent Marker', cursive;
+      color: #ffffff;
+      font-size: 50px;
+      margin-bottom: 0;
+      padding: 0;
+      margin-top: -1vh;   
+    }
+    .subtitletext{
+      font-family: 'Montserrat', sans-serif; 
+      color: #5e17eb;
+      font-size: 20px;
+      margin: 0;
+      margin-top: 0vh;
+      padding: 0;
+      text-align: center;
+      margin-left: -25%;
+      text-shadow: 1px 0 #5e17eb;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+    .HaDo{
+      font-family: 'Babylonica', cursive;
+      font-size: 50px; 
+      color: #004aad;
+      display: flex; 
+      justify-content: flex-end; 
+      margin-right: 13%;
+      margin-top: 4%;
+    }
+    .copyright{
+      font-family: 'Montserrat', sans-serif; ;
+      font-size: 15px; color: #004aad;
+      display: flex; 
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: -4%;
+      margin-right: 10%;
+      text-align: center;
+    }
+  }
+
+
+  
+  /* 936 - 900 */
+  @media screen and (max-width: 936px) and (min-width: 900px) {
+    body{
+      background-image: url(LIVE\ YOUR\ LIFE\ THE\ WAY\ YOU\ WANT\ \(2\).png)!important; height: 100%; background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .Title{
+      font-family: 'Permanent Marker', cursive;
+      color: #ffffff;
+      font-size: 45px;
+      margin-bottom: 0;
+      padding: 0;
+      margin-top: -1vh;   
+    }
+    .subtitletext{
+      font-family: 'Montserrat', sans-serif; 
+      color: #5e17eb;
+      font-size: 20px;
+      margin: 0;
+      margin-top: 0vh;
+      padding: 0;
+      text-align: center;
+      margin-left: -25%;
+      text-shadow: 1px 0 #5e17eb;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+    .agree{
+      color: #ffffff; 
+      font-size: 14px;
+      padding-left: 3%;
+      padding-right: 60%;
+      font-family: 'Mynerve', cursive;
+    }
+    .HaDo{
+      font-family: 'Babylonica', cursive;
+      font-size: 50px; 
+      color: #004aad;
+      display: flex; 
+      justify-content: flex-end; 
+      margin-right: 13%;
+      margin-top: 11.5%;
+    }
+    .copyright{
+      font-family: 'Montserrat', sans-serif; ;
+      font-size: 15px; color: #004aad;
+      display: flex; 
+      justify-content: flex-end;
+      align-items: flex-end;
+      margin-top: -6%;
+      margin-right: 10%;
+      text-align: center;
+    }
+  }
+
+
+
+  /* 899 - 452 */
+  @media screen and (max-width: 899px) and (min-width: 452px) {
+    body, html {
+      margin: 0; 
+      padding: 0;
+    }
+    body{
+      background-image: url(phonebg5.png)!important;
+      background-repeat: no-repeat; 
+      background-position: center;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height:100%;
+      min-width: 100%;
+    }
+    .divto{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .Title{
+      font-family: 'Permanent Marker', cursive;
+      color: #ffffff;
+      font-size: 7vw;
+      margin-bottom: 0;
+      padding: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 0vh;
+      text-align: center;
+    }
+    .subtitle{
+      padding-left: 5%;
+      padding-right: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .subtitletext{
+      font-family: 'Montserrat', sans-serif; 
+      color: #5e17eb;
+      font-size: 2.5vw;
+      margin: 0;
+      margin-top: 0vh;
+      padding: 0;
+      text-align: center;
+      text-shadow: 1px 0 #5e17eb;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+    .agree{
+      color: #ffffff; 
+      font-size: 14px;
+      padding-left: 3%;
+      padding-right: 3%;
+      font-family: 'Mynerve', cursive;
+    }
+    .anhto{
+      margin-top: 5%;
+      padding-left: 0%;
+      display: flex;
+      align-items: center;
+      align-content: end;
+      align-content: flex-end;
+      justify-content: end;
+      flex-direction: column;
+    }
+    .anh{
+      display: block;
+      height: 200px;
+      width: 200px;
+    }
+    .HaDo{
+      font-family: 'Babylonica', cursive;
+      font-size: 40px; 
+      color: #ffffff;
+      margin-right: 0%;
+      margin: 0%;
+      padding: 0;
+      padding-right: 15%;
+      text-align: center;
+      margin-bottom: 12%;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+    .cpr{
+      margin-top: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .copyright{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px; color: #ffffff;
+      text-align: center;
+    }
+    #loader {
+      border: 12px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 12px solid #444444;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+    }   
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    }     
+    .center {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    #bg{
+      background-image: url(loading\ screen\ pc.png);
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+    } 
+    .input {
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 25px; 
+      height: 20%;
+      border: none;
+      padding: 0vh 3% 0vh 3%;
+      width: 40%; 
+    }
+    .submit{
+      margin-top: 2%;
+    }
+    input[type=submit] {
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 25px; 
+      height: 20%;
+      border: none;
+      padding: 0vh 12% 0vh 12%;
+       width: fit-content;
+      cursor:pointer;
+      background-color: #f68712;
+    }
+    .nhap{
+      width: 100%; 
+      margin-top: 10%
+    }
+    .agree{
+      color: #ffffff; 
+      font-size: 3vw;
+      padding-left: 3%;
+      padding-right: 3%;
+      font-family: 'Mynerve', cursive;
+      text-align: center;
+    }
+  }
+
+
+
+  /* 451 - 000 */
+    @media screen and (max-width: 451px) and (min-width: 000px) {
+    body, html {
+      margin: 0; 
+      padding: 0;
+    }
+    body{
+      background-image: url(phonebg5.png)!important;
+      background-repeat: no-repeat; 
+      background-position: center;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+      height:100%;
+      min-width: 100%;
+    }
+    .divto{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .Title{
+      font-family: 'Permanent Marker', cursive;
+      color: #ffffff;
+      font-size: 35px;
+      margin-bottom: 0;
+      padding: 0;
+      padding-left: 5%;
+      padding-right: 5%;
+      margin-top: 0vh;
+      text-align: center;
+    }
+    .subtitle{
+      padding-left: 5%;
+      padding-right: 5%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .subtitletext{
+      font-family: 'Montserrat', sans-serif; 
+      color: #5e17eb;
+      font-size: 13.5px;
+      margin: 0;
+      margin-top: 0vh;
+      padding: 0;
+      text-align: center;
+      text-shadow: 1px 0 #5e17eb;
+      letter-spacing:1px;
+      font-weight:bold;
+    }
+    .agree{
+      color: #ffffff; 
+      font-size: 14px;
+      padding-left: 3%;
+      padding-right: 3%;
+      font-family: 'Mynerve', cursive;
+      }
+    .anhto{
+      margin-top: 5%;
+      padding-left: 0%;
+      display: flex;
+      align-items: center;
+      align-content: end;
+      align-content: flex-end;
+      justify-content: end;
+      flex-direction: column;
+    }
+    .anh{
+      display: block;
+      height: 200px;
+      width: 200px;
+    }
+    .HaDo{
+      font-family: 'Babylonica', cursive;
+      font-size: 40px; 
+      color: #ffffff;
+      margin-right: 0%;
+      margin: 0%;
+      padding: 0;
+      padding-right: 15%;
+      text-align: center;
+      margin-bottom: 12%;
+      white-space: nowrap;
+      font-weight: bold;
+    }
+    .cpr{
+      margin-top: 5%;
+      padding-left: 10%;
+      padding-right: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .copyright{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 10px; color: #ffffff;
+      text-align: center;
+    }
+    #loader {
+      border: 12px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 12px solid #444444;
+      width: 70px;
+      height: 70px;
+      animation: spin 1s linear infinite;
+    }
+          
+    @keyframes spin {
+        100% {
+            transform: rotate(360deg);
+        }
+    } 
+    .center {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+    #bg{
+      background-image: url(loading\ screen\ pc.png);
+    }
+    ::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+    } 
+    .input {
+        color: #ffffff;
+        font-size: 25px;
+        text-align: center;
+        border-radius: 25px; 
+        height: 20%;
+        border: none;
+        padding: 0vh 3% 0vh 3%;
+        width: 40%; 
+    }
+    .submit{
+      margin-top: 2%;
+    }
+    input[type=submit] {
+      color: #ffffff;
+      font-size: 25px;
+      text-align: center;
+      border-radius: 25px; 
+      height: 20%;
+      border: none;
+      padding: 0vh 12% 0vh 12%;
+       width: fit-content;
+      cursor:pointer;
+      background-color: #f68712;
+    }
+    .nhap{
+        width: 100%; 
+        margin-top: 10%;
+    }
+  }
+    </style>
+  </head>
+  <body>
+    <div id="bg" class="center"></div>
+    <div id="loader" class="center" style="z-index: 1;"></div>
+    <div id="blur" style="z-index: 2">
+    <div class="divto">
+      <div>
+        <p class="Title">
+          LIVE YOUR LIFE THE WAY YOU WANT
+        </p>
+      </div>
+      <div class="subtitle">
+        <p class="subtitletext">
+          Sign up to watch a complimentary webinar about 
+          the internet-based trusted and proven system <br>
+          & <br>
+          Join our community of  digital business owners       
+          to set up and run  your own business successfully!
+        </p>
+      </div>
+       <div class="nhap">
+        <form action="https://script.google.com/macros/s/AKfycbzG9tk7bmzQYc5bEUacfESCjN9KnR8nwOF-FZDK_A89BTcJWK81NwJ9IEvr2WF1biFN2Q/exec" 
+        method="post" 
+        id="my-form"
+        autocomplete="off"
+        onsubmit="moi()"
+        >
+          <div>
+            <label> 
+              <input class="input" name="Name"  style="background-color: #f8c392; margin-left: 5%"  type="text" placeholder="Name" required>
+              <input class="input" name="Email" style="background-color: #f8c392"  type="email" placeholder="Email" required>
+            </label>
+          </div>
+            <br>
+            <div style="display: flex; justify-content: center;">
+              <input class="submit" type="submit" value="Sign Me Up"/>
+            </div>
+          </div>
+          </form>
+        <p class="agree">
+          By pressing Sign Me Up, you consent us to send you information 
+          </p>
+    </div>
+      <div class="anhto">
+        <div>
+          <img class="anh " src="photo4.png" alt="HaDo">
+        </div>
+        <div class="Ha">
+        <p class="HaDo">
+          Ha Do
+        </p>
+        </div>
+      </div>
+      <div class="cpr"> 
+        <p class="copyright">
+          As with any business, results will vary and cannot be guaranteed. <br>
+          Copyright © 2023 www.hadoglobal.com. All Rights Reserved
+        </p>
+      </div>
+      </div>
+    </div>
+  <script>
+document.onreadystatechange = function() {
+            if (document.readyState !== "complete") {
+                document.querySelector(
+                "#bg").style.visibility = "visible";
+                document.querySelector(
+                "#loader").style.visibility = "visible";
+                document.querySelector(
+                "body").style.visibility = "hidden";
+            
+            } else {
+                document.querySelector(
+                "body").style.visibility = "visible";
+                document.querySelector(
+                "#loader").style.display = "none";
+                document.querySelector(
+                "#bg").style.display = "none";
+                
+            }
+        };
+
+window.onbeforeunload = function () {
+window.scrollTo(0, 0);
+}
+
+window.addEventListener("load", function() {
+  const form = document.getElementById('my-form');
+  form.addEventListener("submit", function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    const action = e.target.action;
+    fetch(action, {
+      method: 'POST',
+      body: data,
+    })
+    .then(() => {
+        location.href ='https://hannahado.github.io/landingpage/workshop.html'
+    })
+  });
+});
+function moi() {
+    document.querySelector(
+                "#loader").style.visibility = "visible";
+    document.querySelector(
+                "#loader").style.display = "block";
+    document.getElementById("blur").style.filter = "blur(3px)";
+    document.getElementById("blur").style.backdropFilter = "blur(3px)";
+    document.getElementById("blur").style.webkitfilter = "blur(3px)";
+    document.getElementById("blur").style.webkitbackdropFilter = "blur(3px)";
+}
+  </script>
+  </body>
+</html>
