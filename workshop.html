@@ -119,6 +119,15 @@
           background-repeat: no-repeat;
           overflow: hidden;
         }
+        .fb{
+            font-size: 30px;
+            font-weight: bold;
+        }
+        @media screen and (max-width: 500px) and (min-width: 000px){
+            .letrai{
+                margin-right: 5.5%;
+            }
+        }
 </style>
 </head>
 <body>
@@ -134,10 +143,29 @@
         </iframe>
         </div>
         <p class="tech">You don't need to have any business background and  you don't need to be a technological guru to make this work!</p>
+        
+
+        <div class="letrai" style="display: flex;
+                    justify-content: center; 
+                    align-items: center; 
+                    margin-top: 2vh;">   
+            <div>
+                <p class="fb">
+                    Connect with me on Facebook
+                </p>
+            </div>
+            <div style="margin-left: 5%;">
+                <a href="https://www.facebook.com/ha.do.7587" target="_blank" rel="noopener noreferrer"> <img style="width: 60px; height: 60px;" src="fb.png" alt="facebook"></a>
+            </div>
+        </div>
+
+
+
+
         <div style="display: flex; justify-content: center;">
-        <div style=" display: flex; justify-content: center; width: 60%;
-        height: 47px;
-        border-bottom: 1px solid black;">
+        <div style=" display: flex; justify-content: center; width: 70%; margin: 0; padding: 0; height: 1px;
+        /* height: 47px; */
+        border-bottom: 3px solid black;">
         </div>
     </div>
         <p class="pro">This system provides all of the sales tools, marketing training, and, YES, even the products, that you need to simply plug in and get started with your own successful online business.</p>
@@ -157,6 +185,7 @@ document.onreadystatechange = function() {
                 "#loader").style.visibility = "visible";
                 document.querySelector(
                 "body").style.visibility = "hidden";
+                document.body.style.overflow = 'hidden';
                 
                 
             } else {
@@ -166,7 +195,7 @@ document.onreadystatechange = function() {
                 "#loader").style.display = "none";
                 document.querySelector(
                 "#bg").style.display = "none";
-                
+                document.body.style.overflow = 'visible';
             }
         };
     window.onbeforeunload = function () {
