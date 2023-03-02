@@ -757,6 +757,7 @@ document.onreadystatechange = function() {
                 "#loader").style.visibility = "visible";
                 document.querySelector(
                 "body").style.visibility = "hidden";
+                document.body.style.overflow = 'hidden';
             
             } else {
                 document.querySelector(
@@ -765,6 +766,7 @@ document.onreadystatechange = function() {
                 "#loader").style.display = "none";
                 document.querySelector(
                 "#bg").style.display = "none";
+                document.body.style.overflow = 'visible';
                 
             }
         };
