@@ -722,7 +722,7 @@
           </div>
             <br>
             <div style="display: flex; justify-content: center;">
-              <input class="submit" type="submit" value="Sign Me Up"/>
+              <input id="button" class="submit" type="submit" value="Sign Me Up"/>
             </div>
           </div>
           </form>
@@ -791,6 +791,7 @@ window.addEventListener("load", function() {
   });
 });
 function moi() {
+  document.getElementById("button").disabled = true;
     document.querySelector(
                 "#loader").style.visibility = "visible";
     document.querySelector(
